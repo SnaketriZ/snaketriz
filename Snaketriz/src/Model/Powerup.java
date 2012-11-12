@@ -2,8 +2,9 @@ package Model;
 
 import Enums.PowerupTyp;
 
-public class Powerup {
+public class Powerup implements Runnable{
 	private PowerupTyp typ;
+	private Snaketriz snaketriz;
 
 	private void generate() {
 
@@ -11,5 +12,11 @@ public class Powerup {
 
 	private void start() {
 
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 }
